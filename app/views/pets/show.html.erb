@@ -1,0 +1,10 @@
+<h1>Show all Pets!</h1>
+
+<p> Add pets!</p>
+<h2><%= @pet.name %></h2>
+<img src="<%= @pet.img %>" alt="">
+<%# <img src="https://images.dog.ceo/breeds/hound-afghan/n02088094_1003.jpg"> %>
+<p><%= @pet.breed %></p>
+<li><%= link_to "Edit current pet", edit_pet_path(@pet.id)%></li>
+<li><%= link_to "Delete current pet", pet_path(@pet.id), method: 'delete', data: { confirm: "Are you sure?" }  %></li>
+<li><%= link_to "Return to index", pets_path%></li>

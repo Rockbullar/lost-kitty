@@ -1,0 +1,9 @@
+<h1>New</h1>
+
+<%= form_for(@new_pet) do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name%>
+  <%= f.label :breed %>
+  <%= f.text_field :breed%>
+  <%= f.submit %>
+<% end %>

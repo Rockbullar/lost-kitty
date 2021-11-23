@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row justify-content-between">
+  <% @pets.each do |pet| %>
+
+
+  <%# <div class="card" style="width: 12rem;">
+  <div class="card-body col-6">
+    <h5 class="card-title"><%= link_to "#{pet.name}", pet_path(pet)%>
+    <%# <img src="<%#= pet.img" alt=""> %>
+    <%# <h3><%= pet.breed %>
+  <%# </div>  %>
+
+  <div class="card " style="width: 18rem;">
+
+    <img class="card-img-top me-auto"  src="<%= pet.img%>" alt="" width="150" height="150">
+    <div class="card-body">
+      <h4 class="card-text"><%= link_to "#{pet.name}", pet_path(pet)%></h5>
+      <%# <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> %>
+      <h5><%= pet.breed %></h3>
+    </div>
+  </div>
+
+  <% end %>
+</div>
+</div>
